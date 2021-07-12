@@ -67,6 +67,11 @@ Available at: https://github.com/bioimage-io/spec-bioimage-io
 <img style="height:100%;object-fit:contain;background-color: white;"   src="https://docs.google.com/drawings/d/e/2PACX-1vSuRHrs1p6omG_CRC_1t_19gsP6RJOHwnelTKNrD-1opsXzGZ0AwZPYBT4SBQHkvyYlGB-UumyZAigG/pub?w=1261&amp;h=902">
 
 -----
+### BioImage Model Zoo
+
+Available at: https://bioimage.io/
+
+-----
 ### WIP: ImJoy App Engine
  * Decentralized cloud infrastructure for reproducible science
  * Key Idea:
