@@ -1,4 +1,4 @@
-# Scalable file sharing and standards
+# Scalable data sharing and standards
 
 Wei Ouyang
 
