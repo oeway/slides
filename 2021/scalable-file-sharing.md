@@ -60,6 +60,7 @@ An ImJoy plugin, made by Trevor Manz et. al.
  * Visualization, test run features powered by ImJoy
  * Collabrative efforts: together with Kreshuk Group, Jug Group
 
+Available at: https://github.com/bioimage-io/spec-bioimage-io
 -----
 ### BioImage Model Zoo
 <img style="height:100%;object-fit:contain;background-color: white;"   src="https://docs.google.com/drawings/d/e/2PACX-1vSuRHrs1p6omG_CRC_1t_19gsP6RJOHwnelTKNrD-1opsXzGZ0AwZPYBT4SBQHkvyYlGB-UumyZAigG/pub?w=1261&amp;h=902">
