@@ -128,11 +128,13 @@ Made by Trevor Manz et. al.
 -----
 ## 🔥Demos!
  * Overview: https://bioimage.io/
- * Upload and download Models
+ * Find and download models
  * Test run models and datasets
    * [HPA-classification](https://bioimage.io/#/?tags=hpa&id=hpa%2Fhpashufflenetv2)
    * [Nuclei Broad](https://bioimage.io/#/?tags=nuclei&id=ilastik%2Funet2dnucleibroad)
-   * []
+   * [luca-7color](https://bioimage.io/#/?type=dataset&id=imjoy%2Fluca-7color)
+ * Upload Models
+ * Ask for help
 
 -----
 ## 🚀BioImage.IO: Beyond the Model Zoo
