@@ -14,6 +14,7 @@ KTH | SciLifeLab, Stockholm
 ## What is ImageJ.JS?
  * ImageJ compiled into Javascript with CheerpJ
  * Runs completely in the browser and offline
+ * Support tablets and mobile devices
 
 -----
 ## ImJoy Integration
