@@ -8,16 +8,17 @@
 -----
 ## What is ImageJ.JS?
  * ImageJ compiled into Javascript with CheerpJ
- * Runs offline
+ * Runs completely in the browser and offline
 
 -----
 ## ImJoy Integration
+<img style="width: 200px" src="https://imjoy.io/static/img/imjoy-logo-white.png">
+
  * Support Volume rendering with ITK/VTK Viewer
  * Support NGFF/Zarr
  * CellPose
  * DeepImageJ integration
 
-<img style="width: 200px" src="https://imjoy.io/static/img/imjoy-logo-white.png">
 
 -----
 ## See it in action!
@@ -51,14 +52,13 @@ A basic ImageJ macro example:
 -----
 ## Limitations
 
-Hard limitations:
  * Single-threaded
  * <4GB memory
-Short-term limitations:
  * ImageJ-1 only
  * File system
- Only suitable for the GUI
 
+
+Is it a toy?
 ----- 
 <!-- .slide: data-background="white" -->
 ## The bigger picture
@@ -94,6 +94,7 @@ ImageJ.JS <= `imjoy-rpc` => Binder + Fiji
 ### Acknowledgements
 
 ImageJ.JS is powered by the 🧠 and ❤️ of the ImJoy-Team, with the help from:
+ * Wayne Rasband
  * Fiji/ImageJ community
  * Leaning Technologies
 
