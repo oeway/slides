@@ -85,7 +85,7 @@ Is it just a toy?
      - WebGPU
 
 -----
-## The idea
+## WIP: Connecting ImageJ.JS with Remote Fiji 
 ImageJ.JS <= `imjoy-rpc` => Binder + Fiji
 
  * Web Viewers <== N5/Zarr Store ==> Remote Fiji
