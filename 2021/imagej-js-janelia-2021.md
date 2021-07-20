@@ -1,4 +1,9 @@
-# Bringing ImageJ to the browser
+# ImageJ.JS: Bringing ImageJ to the browser
+
+Wei Ouyang 
+
+KTH | SciLifeLab, Stockholm
+
 -----
 ## The story
 <img style="width: 400px" src="https://raw.githubusercontent.com/oeway/slides/master/2021/bob-java2script-hackathon.png">
