@@ -62,7 +62,8 @@ A basic ImageJ macro example:
  * Single-threaded
  * <4GB memory
  * ImageJ-1 only
- * File system
+ * Limited plugins
+ * File system access
 
 
 Is it just a toy?
