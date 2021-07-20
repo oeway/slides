@@ -64,7 +64,7 @@ A basic ImageJ macro example:
  * File system
 
 
-Is it a toy?
+Is it just a toy?
 ----- 
 <!-- .slide: data-background="white" -->
 ## The bigger picture
