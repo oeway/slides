@@ -18,6 +18,7 @@ KTH | SciLifeLab, Stockholm
 -----
 ## ImJoy Integration
 <img style="width: 200px" src="https://imjoy.io/static/img/imjoy-logo-white.png">
+<br>
 
  * Support Volume rendering with ITK/VTK Viewer
  * Support NGFF/Zarr
