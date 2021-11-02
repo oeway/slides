@@ -9,9 +9,12 @@ KTH | SciLifeLab, Stockholm
 -----
 ## Challenges in AI for bioimaging
 
+Desktop vs Server
+
 * **Usability**: User friendly GUI
 * **Interactivity**: Respond to GUI on laptop/mobile
 * **Scalability**: Remote storage and compute resources
+
 
 -----
 ## <img alt="ImJoy" src="https://imjoy.io/static/img/imjoy-logo-white.svg">
