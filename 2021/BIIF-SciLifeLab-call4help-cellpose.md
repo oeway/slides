@@ -1,4 +1,4 @@
-﻿BIIF Call4Help webinar (Nov. 2021)
+BIIF Call4Help webinar (Nov. 2021)
 
 # CellPose in ImJoy
 
@@ -70,6 +70,11 @@ Try it yourself at https://ij.imjoy.io
 
 <iframe width="100%" height="500px" src="https://www.youtube.com/embed/A0DNcN7L5t0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+-----
+### 🔥Try it yourself
+ * [Paper](https://f1000research.com/articles/10-142)
+ * [Github](https://github.com/imjoy-team/imjoy-interactive-segmentation)
+ * Interactive Segmentation - Kaibu [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/ZeroCostDL4Mic_Interactive_annotations_Cellpose.ipynb)
 
 -----
 # <img alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo-white.svg">
