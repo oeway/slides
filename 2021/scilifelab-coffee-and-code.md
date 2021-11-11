@@ -25,7 +25,7 @@ Many models can be downloaded from https://huggingface.co/
 
 -----
 <!-- .slide: data-background="white" -->
-## Understand GPT-3 
+## Conventional CNNs and RNNs
 
 ![](https://daleonai.com/images/cnn.png)
 
