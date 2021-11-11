@@ -104,10 +104,7 @@ add another button for parsing the x and y column in the table and save them as 
 ```
 
 ---
-### 5. Copilot in vscode
-[Signup here](https://copilot.github.com/)
-
-🔥Voice programming demo by Anthony Cesnik
+### 5. 🔥Voice programming demo by Anthony Cesnik
 
 ---
 ### 6. Using API document
@@ -146,6 +143,7 @@ add another button for parsing the x and y column in the table and save them as 
 ## Discussion
  * Limitations and criticisms
  * Ethical issues
+ * Try it yourself with Github Copilot
  * What do you think?
  
  [On the Opportunities and Risks of Foundation Models](https://fsi.stanford.edu/publication/opportunities-and-risks-foundation-models)
@@ -168,4 +166,3 @@ The demos during this talk has not been approved by OpenAI
 -----
 
 # 🙏Thank You!
-
