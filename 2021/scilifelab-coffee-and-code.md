@@ -43,8 +43,6 @@ Many models can be downloaded from https://huggingface.co/
  * Attention
  * Self-Attention
 
-<footer style="font-size: 12px">https://daleonai.com/transformers-explained</footer>
-
 -----
 <!-- .slide: data-background="white" -->
 ## Attention is all you need
@@ -79,14 +77,14 @@ Many models can be downloaded from https://huggingface.co/
 
 ---
 ## 2. Javascript UI generation demo
-```
+```text
 Make a snowstorm on a black background
 Make a red ball bounce around the screen
 Make a website for a cat that's an attorney. Provide a bio and a phone number. Create a small round avatar image: https://bit.ly/3fsc0rH. Center everything.
 ```
 ---
 ### 3. HPA image manipulation
-```
+```text
 Display this cell images on the screen: https://images.proteinatlas.org/115/672_E2_1_blue_red_green.jpg and set the width to 100px.
 Add a button and when I click it make the image rotate with a random angle.
 Add another button to only show the blue cells in the image.
@@ -95,7 +93,7 @@ Add a fourth button for restore the image to its original state.
 ```
 ---
 ### 4. Display CSV table
-```
+```text
 display a drag and drop file field and make it visible
 when the file changes, load the file content, parse the file content as a csv table, store the rows as an array of objects, then display the table on the screen!
 add a button when the user click it, highlight the rows in the table contains "membrane"
@@ -109,13 +107,13 @@ add another button for parsing the x and y column in the table and save them as 
 ---
 ### 6. Using API document
 
-```markdown
+```text
 # Get api docs from https://www.uniprot.org/help/api_retrieve_entries
 # make a function for fetching a sequence (in fasta format) from a uniprot entry
 # import the requests library
 ```
 
-```markdown
+```text
 # test the fetch sequence function
 ```
 
@@ -125,6 +123,12 @@ add another button for parsing the x and y column in the table and save them as 
  * Guide it, not command it
  * Show and tell: Provide context and examples
  * Make it clear what you want either through instructions, examples, or a combination of the two.
+
+-----
+## 🔥Try Codex yourself
+ * Open SciLifeLab slack
+ * Goto #gpt3-bot channel
+ * Please raise your hand before you send to the bot
 
 -----
 ## Why Codex is important?
