@@ -33,7 +33,7 @@ Many models can be downloaded from https://huggingface.co/
 
 -----
 <!-- .slide: data-background="white" -->
-## Attention is all you need
+## "Attention is all you need"
 <img style="height:80%" src="https://daleonai.com/images/screen-shot-2021-05-06-at-12.12.21-pm.png">
 
 -----
@@ -57,11 +57,6 @@ Many models can be downloaded from https://huggingface.co/
 <!-- .slide: data-background="white" -->
 <img src="https://opendatascience.com/wp-content/uploads/2020/08/gpt3header-1.png">
 
------
-<!-- .slide: data-background="white" -->
-## GPT-3 in a nutshell
-
-# Autocompletion!
 
 -----
 <!-- .slide: data-background="white" -->
@@ -79,7 +74,7 @@ Many models can be downloaded from https://huggingface.co/
 
 -----
 # 🔥Codex live demos!
-
+## disclaimer: All the demo applications have not yet been approved for launch
 -----
 ## 1. Codex basic demos
  * Explain code
@@ -114,10 +109,15 @@ add another button for parsing the x and y column in the table and save them as 
 
 ---
 ### 5. Copilot in vscode
+[Signup here](https://copilot.github.com/)
 
-Get api docs from https://www.uniprot.org/help/api_retrieve_entries
+🔥Voice programming demo by Anthony Cesnik
+
+---
+### 6. Using API document
 
 ```markdown
+# Get api docs from https://www.uniprot.org/help/api_retrieve_entries
 # make a function for fetching a sequence (in fasta format) from a uniprot entry
 # import the requests library
 ```
@@ -129,21 +129,31 @@ Get api docs from https://www.uniprot.org/help/api_retrieve_entries
 -----
 ## Tips on using Codex
  * Think it as an **autocompletion** tool
- * Provide more context and examples
+ * Show and tell: Provide context and examples
+ * Use API document
  * Make it clear what you want either through instructions, examples, or a combination of the two.
+ * Hidden context + user input => magical application
 
 -----
-## How to apply it in life science
- * Literature mining
- * DNA/Protein sequence analysis
- * Generate source code for data science tasks
- * ...
+## Why Codex is important?
+ * Better generalization and interpretability
+ * Zero/Few-shot learning for low data domain
+ * Human + AI
+ * Applications in life science
 
 -----
 ## Discussion
- * Requires tweaking
+ * Drawbacks and criticisms
+ * GPT-4?
  * Ethical issues
  * What do you think?
+
+-----
+## Upcoming Seminar at SciLifeLab
+[A sneak peek into the future of AI-assisted life science](https://www.scilifelab.se/event/scilifelab-ai-seminar-series-wei-ouyang/)
+* November 23rd, 10:00 - 11:00
+* Hybrid seminar
+* Register now!
 
 -----
 ### Acknowledgements
@@ -155,4 +165,3 @@ The demos during this talk has not been approved by OpenAI
 -----
 
 # 🙏Thank You!
-
