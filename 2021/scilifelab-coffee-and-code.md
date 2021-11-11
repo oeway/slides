@@ -12,6 +12,7 @@ KTH | SciLifeLab, Stockholm
 * Made by OpenAI, released in June 2020
 * 175 billion parameters
 * Trained on 45TB of text data
+* Take 355 years to train GPT-3 on a Tesla V100
 * Costs $12 million to train once
 * Not open-source (yet), only API access
 
@@ -22,7 +23,6 @@ KTH | SciLifeLab, Stockholm
 
 Many models can be downloaded from https://huggingface.co/
 
-"GPT-4 will have 100 trillion parameters!" <!-- .element: class="fragment" data-fragment-index="1" -->
 -----
 <!-- .slide: data-background="white" -->
 ## Understand GPT-3 
@@ -42,7 +42,9 @@ Many models can be downloaded from https://huggingface.co/
  * Positional Encodings
  * Attention
  * Self-Attention
- 
+
+<footer style="font-size: 12px">https://daleonai.com/transformers-explained</footer>
+
 -----
 <!-- .slide: data-background="white" -->
 ## Attention is all you need
@@ -53,18 +55,10 @@ Many models can be downloaded from https://huggingface.co/
 <iframe style="width:100%;height:100vh" src="https://jalammar.github.io/how-gpt3-works-visualizations-animations/"></iframe>
 
 -----
-## Few-shot learning
+## GPT-3: Autocompletion & few-shot learning
 <!-- .slide: data-background="white" -->
-<img src="https://opendatascience.com/wp-content/uploads/2020/08/gpt3header-1.png">
-
-
------
-<!-- .slide: data-background="white" -->
-## Further reading
-
- * [Transformers, Explained](https://daleonai.com/transformers-explained)
- * [How GPT-3 works](https://jalammar.github.io/how-gpt3-works-visualizations-animations/)
- * [On the Opportunities and Risks of Foundation Models](https://fsi.stanford.edu/publication/opportunities-and-risks-foundation-models)
+<img src="https://raw.githubusercontent.com/oeway/slides/master/2021/robot-autocompletion-example.png">
+<img src="https://miro.medium.com/max/1000/1*q-P5aQ7A6VlsfroP3ckg8A.jpeg">
 
 -----
 ## Codex
@@ -74,7 +68,9 @@ Many models can be downloaded from https://huggingface.co/
 
 -----
 # 🔥Codex live demos!
-## disclaimer: All the demo applications have not yet been approved for launch
+## Disclaimer!
+ * All the demo applications have not yet been approved for launch
+ * Please don't record the demos
 -----
 ## 1. Codex basic demos
  * Explain code
@@ -129,25 +125,32 @@ add another button for parsing the x and y column in the table and save them as 
 -----
 ## Tips on using Codex
  * Think it as an **autocompletion** tool
+ * Guide it, not command it
  * Show and tell: Provide context and examples
- * Use API document
  * Make it clear what you want either through instructions, examples, or a combination of the two.
- * Hidden context + user input => magical application
 
 -----
 ## Why Codex is important?
  * Better generalization and interpretability
  * Zero/Few-shot learning for low data domain
- * Human + AI
+ * Building trust between human & AI
  * Applications in life science
 
 -----
+## Implications for software UX design
+ * Challenges: Flexibility vs Simplicity
+ * Solution: Chat or voice-based UX
+ * Codex + hidden context + user input => magical intelligent application!
+
+-----
 ## Discussion
- * Drawbacks and criticisms
- * GPT-4?
+ * Limitations and criticisms
  * Ethical issues
  * What do you think?
+ 
+ [On the Opportunities and Risks of Foundation Models](https://fsi.stanford.edu/publication/opportunities-and-risks-foundation-models)
 
+ "GPT-4 will have 100 trillion parameters!" <!-- .element: class="fragment" data-fragment-index="1" -->
 -----
 ## Upcoming Seminar at SciLifeLab
 [A sneak peek into the future of AI-assisted life science](https://www.scilifelab.se/event/scilifelab-ai-seminar-series-wei-ouyang/)
@@ -165,3 +168,4 @@ The demos during this talk has not been approved by OpenAI
 -----
 
 # 🙏Thank You!
+
