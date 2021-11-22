@@ -9,6 +9,7 @@ KTH | SciLifeLab, Stockholm
 ## Challenges in AI for bioimaging
 
 * **Usability**: User friendly GUI
+* **Flexibility**: Flexible for different data types
 * **Interactivity**: Respond to GUI on laptop/mobile
 * **Scalability**: Remote storage and compute resources
 * **Privacy**: Edge computing
@@ -94,21 +95,6 @@ Made by Trevor Manz et. al.
 ### Advanced AI models in one click!
 
 -----
-# Challenges
- * Training models is difficult
-  - Complex hardware/software setup
-  - Environmental impact: "Training a single AI model can emit as much carbon as five cars in their lifetimes"
- * Lack of interoperability
- * Hard for non-expert to run
- 
------
-# <img alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo-white.svg">
- * AI model file standard
- * Hosting pretrained models
- * Test run service
- * User/Developer services
-
------
 <!-- .slide: data-background="white" -->
 ### 🤔How it works
 
@@ -131,7 +117,8 @@ Running models in JupyterLite via the BioEngine
 <iframe style="width:100%;height:calc(100vh - 20px)" src="https://jupyterlite.readthedocs.io/en/latest/_static/retro/notebooks/?path=bioengine-demo.ipynb"></iframe>
 
 -----
-## A taste of AI-assisted bioimage analysis
+## AI-assisted Bioimage Analysis
+### A taste of the future!
 
 Powered by OpenAI GPT-3 and Codex
 
