@@ -6,8 +6,8 @@ KTH | SciLifeLab, Stockholm
 
 -----
 <!-- .slide: data-background="white" -->
-## Natural Language Process models
-The exploding model size
+## The trending NLP models
+The exploding Natural Language Processing (NLP) model size
 ![](https://miro.medium.com/max/582/1*C-KNWQC_wXh-Q2wc6VPK1g.png)
 
 -----
