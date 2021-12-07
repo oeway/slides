@@ -9,8 +9,14 @@ SciLifeLab | KTH Royal Institute of Technology
 -----
 ## Overview
  * Introduction to ImJoy & web image analsysis
- * Session 1: Develop your own ImJoy Plugin
- * Session 2: Train your own deep learning model
+ * Develop your own ImJoy Plugin
+ * Train your own deep learning model
+-----
+## Trends in Bioimaging
+ * Use deep learning
+ * Large models (transformers!)
+ * Massive dataset
+ * Scalabile file format (Zarr, N5, NGFF)
 
 -----
 ## Challenges in AI for bioimaging
@@ -26,7 +32,7 @@ SciLifeLab | KTH Royal Institute of Technology
 * Cloud computing: unlimited storage and compute power
 * Modern UI frameworks and libraries
 * WebAssembly and WebGPU
-* Scalable storage and file formats: S3, Zarr, N5, NGFF etc.
+* Scalable storage (e.g, S3).
 
 -----
 ## Progressive Web App
@@ -172,6 +178,11 @@ https://ij.imjoy.io/?open=https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zar
 <button class="button" onclick="api.getPlugin('https://gist.githubusercontent.com/oeway/7a30f3d0c6eb24e9de68e3cece9a5441/raw/HPACellAtlasImages.imjoy.html')">Load HPA Cell Atlas image virtual stack (800GB)</button>
 
 -----
+### Works with Jupyter Notebooks, JupyterLab and Colab
+
+<img style="height:70%;object-fit:contain;background-color: white;"  src="https://raw.githubusercontent.com/imjoy-team/imjoy-demo-assets/main/image125.gif">
+
+-----
 
 ## 🚀A rapid growing list of plugins
  * [ImageJ.JS](https://ij.imjoy.io) <button onclick="api.showDialog({src:'https://ij.imjoy.io'})">Run</button>
@@ -181,11 +192,6 @@ https://ij.imjoy.io/?open=https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zar
  * [ImJoy Slides](https://slides.imjoy.io)
  * [ImJoy Chart Editor](https://chart.imjoy.io)
  * ...
-
------
-### Works with Jupyter/Binder and Colab
-
-<img style="height:70%;object-fit:contain;background-color: white;"  src="https://raw.githubusercontent.com/imjoy-team/imjoy-demo-assets/main/image125.gif">
 
 -----
 ### Different ways of running ImJoy
@@ -200,21 +206,13 @@ https://ij.imjoy.io/?open=https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zar
 -----
 ## 🔥Demo: Develop your own ImJoy Plugin
 
+Go to https://github.com/imjoy-team/imjoy-tutorials and press "." key
 
 -----
 # <img alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo-white.svg">
 ### Advanced AI models in one click!
 
------
-<!-- .slide: data-background="white" -->
-### 🤔How it works
-
-<img style="height:calc(100% - 200px);object-fit:contain;background-color: white;" src="https://docs.google.com/drawings/d/e/2PACX-1vSh8qO-jxZcGKjg5w52IMTesAUMbOaOxc3XQgmW7zBBj6btMGAUjcgh6iHgaTyzI18Ld7SSHkbie2k2/pub?w=1057&amp;h=689">
-
------
-## 🔥Try it yourself!
- https://bioimage.io
-
+https://bioimage.io
 
 -----
 ## BioEngine -- AI model and application serving
@@ -224,19 +222,18 @@ https://ij.imjoy.io/?open=https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zar
  * Suitable for deploying AI workflows for institutions, facilities or labs
 
 -----
-## 🔥Demo: Running models in the BioEngine
-<iframe style="width:100%;height:calc(100vh - 20px)" src="https://jupyterlite.readthedocs.io/en/latest/_static/retro/notebooks/?path=bioengine-demo.ipynb"></iframe>
-
------
 ## 🔥Demo: Train your own deep learning models
+
+Go to https://jupyter.imjoy.io
 
 -----
 ## BioEngine vs Jupyter Notebooks / Colab
+ Scalability!
  * Cloud & On-premise deployment
  * For multi-user or the public
  * Multi-model serving
  * Improved GPU utilization
- * Instant Use without setup time
+ * Instant usage without setup
 
 -----
 ## 🚀AI-assisted Bioimage Analysis
@@ -252,26 +249,22 @@ Powered by OpenAI GPT-3 and Codex
 
 -----
 ## Conclusions
+ * BioImage analysis on the web
  * ImJoy is built for scalability and interactivity
- * ImJoy plugins are sandbox services connected via RPC
- * BioImage Model Zoo for model sharing
- * BioEninge for AI model serving
+ * BioEninge for scalable AI model serving
  * The future of bioimage anlysis
 
 -----
 ### Acknowledgements
 Work carried out at Cell Profiling group @ SciLifeLab headed by Emma Lundberg
 
-BioImage.IO is powered by the 🧠 and ❤️ of:
- * deepImageJ Team
- * EBI Bioimage Archive Team
- * Fiji/ImageJ Team
- * ilastik Team
- * ImJoy Team
- * ZeroCostDL4Mic Team
+ImJoy is powered by the 🧠 and ❤️ of the ImJoy Team including:
+ * Florian Mueller
+ * Martin Hjelmare
+ * Craig Russell
  * ...
 
-Follow us on twitter @ImJoyTeam @bioimageio
+Follow us on twitter @ImJoyTeam
 
 -----
 ### Acknowledgements
