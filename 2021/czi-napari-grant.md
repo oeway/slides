@@ -41,7 +41,7 @@ Joint grant with Anna Kreshuk and Florian Jug Group
  * Utility library for interacting with resources in the model zoo
  * A test suite for CI testing against napari
  * Example models and plugins
- * Connect nappari to our cloud model serving infrastructure
+ * Connect napari to our cloud model serving infrastructure
  * Connecting to the napari plugin hub website with the model zoo
 
 -----
