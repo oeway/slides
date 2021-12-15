@@ -54,8 +54,8 @@ Joint grant with Anna Kreshuk and Florian Jug Group
 ## Collaborations: Napari + BioImage Model Zoo
  * Help napari users to use models in the model zoo
  * Help your plugins to consume or produce compatible models
- * Advertise your AI model and plugins
- * Run AI models with through our cloud infrastructure
+ * Advertise your AI models and plugins
+ * Run AI models through our cloud infrastructure
  * Join us as a community partner!
 
 -----
@@ -82,4 +82,3 @@ Follow us on twitter @bioimageio
 -----
 
 # 🙏Thank You!
-
