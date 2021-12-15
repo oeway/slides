@@ -33,7 +33,7 @@ Joint grant with Anna Kreshuk and Florian Jug Group
  * Enable sharing of pretrained AI models across plugins and other tools
  * Run models in the cloud via the BioEngine
 -----
-## Targeted audience
+### Targeted audience: napari developers
 <img style="width: 100vw" src="https://docs.google.com/drawings/d/e/2PACX-1vTiVaKFJbJRpkJKzpYCsxwW4Kx4k6yD8cAdZv6Cieae4a0V6AcJUnJEKxzsY7siSgx0D29WEQ1UpRGE/pub?w=950&amp;h=518">
 
 -----
