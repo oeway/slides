@@ -1,17 +1,21 @@
+-----
+<img style="width: 100vw" src="https://docs.google.com/drawings/d/e/2PACX-1vQIa26wyOOlnLYLcVZECV-784YBF4PmQVDdlVabrB2ymrwd5BvUalVrtSir8YAkzR9gsszWa7cnJs9p/pub?w=961&amp;h=599">
+-----
 ## Deep learning models for napari via the BioImage Model Zoo
 Wei Ouyang
 KTH | SciLifeLab, Stockholm
 
-Joint grant with Anna Kreshuk and Florian Jug
+Joint grant with Anna Kreshuk and Florian Jug Group
 
 
 -----
 ## Sharing deep learning models
- * Traning models is challenging
- * Pretrained models, generalist models
- * Model & weights file format
- * Search and find models
- * Interoperability between consumer software
+ * Traning models is challenging <!-- .element: class="fragment fade-up" data-fragment-index="1" -->
+ * Pretrained models, generalist models <!-- .element: class="fragment fade-up" data-fragment-index="2" -->
+ * Model & weights file format <!-- .element: class="fragment fade-up" data-fragment-index="3" -->
+ * Search and find models <!-- .element: class="fragment fade-up" data-fragment-index="4" -->
+ * Interoperability between consumer software <!-- .element: class="fragment fade-up" data-fragment-index="5" -->
+ * Reducing the carbon footprint! <!-- .element: class="fragment fade-up" data-fragment-index="6" -->
 
 -----
 # <img alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo-white.svg">
@@ -29,6 +33,9 @@ Joint grant with Anna Kreshuk and Florian Jug
  * Load models from the BioImage Model Zoo
  * Enable sharing of pretrained AI models across plugins and other tools
  * Run models in the cloud via the BioEngine
+-----
+## Targeted audience
+<img style="width: 100vw" src="https://docs.google.com/drawings/d/e/2PACX-1vTiVaKFJbJRpkJKzpYCsxwW4Kx4k6yD8cAdZv6Cieae4a0V6AcJUnJEKxzsY7siSgx0D29WEQ1UpRGE/pub?w=950&amp;h=518">
 
 -----
 ## Working plan
@@ -39,8 +46,18 @@ Joint grant with Anna Kreshuk and Florian Jug
  * Connecting to the napari plugin hub website with the model zoo
 
 -----
-## Napari + BioImage Model Zoo
-Community building
+## Milestones
+* M1: Release of the first napari plugin
+* M2: Listing of the first napari-compatible model in the BMZ
+* M3: Public release of the libraries, documentation and contribution guidelines 
+
+-----
+## Collaborations: Napari + BioImage Model Zoo
+ * Help napari users to use models in the model zoo
+ * Help your plugins to consume or produce compatible models
+ * Advertise your AI model and plugins
+ * Run AI models with through our cloud infrastructure
+ * Join us as a community partner!
 
 -----
 ### Acknowledgements
@@ -55,6 +72,9 @@ BioImage.IO is powered by the 🧠 and ❤️ of:
  * ImJoy Team
  * ZeroCostDL4Mic Team
  * ...
+
+-----
+### Acknowledgements
 
 Work supported by the Cell Profiling group headed by Emma Lundberg
 
