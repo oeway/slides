@@ -1,6 +1,6 @@
 ## <img src="https://imjoy.io/static/img/imjoy-logo-white.svg" style="width:500px">
 
-## AI-powered image analysis on the web
+## AI-powered image annotation and analysis on the web
 
 Wei OUYANG
 
@@ -40,18 +40,6 @@ Data science tools in the browser
  * Open Integration with existing software/website
 
 -----
-<!-- .slide: data-state="demo1" -->
-### Calling Python from JS with RPC
-<div>
-Python (cloud)  ⇔  Javascript (local)
-</div>
-<div>
-<div id="window-1" style="display: inline-block;width: 46%; height: calc(100vh - 200px);"></div>
-
-<div id="window-2" style="display: inline-block;width: 46%; height: calc(100vh - 200px);"></div>
-</div>
-
------
 
 ### 👐Open Integration with Web Apps
 
@@ -81,6 +69,7 @@ Built with ITK/VTK Viewer, OpenLayers etc.
  * Started in Jan 2021, built with Kaibu & ImJoy
  * Support multi-user collabration and running on mobile
  * Data and server hosted at Institut Pasteur
+
 <img style="height:calc(100vh - 400px);" src="https://github.com/oeway/slides/blob/master/2021/msf-kaibu-ipad-annotation.png?raw=true">
 
 -----
