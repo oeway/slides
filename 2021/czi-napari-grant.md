@@ -1,4 +1,3 @@
------
 <img style="width: 100vw" src="https://docs.google.com/drawings/d/e/2PACX-1vQIa26wyOOlnLYLcVZECV-784YBF4PmQVDdlVabrB2ymrwd5BvUalVrtSir8YAkzR9gsszWa7cnJs9p/pub?w=961&amp;h=599">
 -----
 ## Deep learning models for napari via the BioImage Model Zoo
