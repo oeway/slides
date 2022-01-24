@@ -116,7 +116,7 @@ Made by Trevor Manz et. al.
 -----
 ### 🔥Example: Interactive Annotation with ImJoy and Colab
 
-<iframe width="100%" height="500px" src="https://www.youtube.com/embed/A0DNcN7L5t0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="500px" src="https://www.youtube.com/embed/VIZDkhCZtJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 -----
