@@ -12,7 +12,7 @@ SciLifeLab | KTH Royal Institute of Technology
 ## Making AI human compatible
 
 <img style="width:40%" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Skynet_Terminator_logo.png">
-<img style="width:20%;" src="https://people.eecs.berkeley.edu/~russell/images/HumanCompatible-Cover-UK.jpg">
+<img style="width:30%;" src="https://people.eecs.berkeley.edu/~russell/images/HumanCompatible-Cover-UK.jpg">
 
 _Machines are benificial to the extent that their actions can be expected to achive our objective._
 -- Stuart Russell
@@ -28,7 +28,7 @@ _Machines are benificial to the extent that their actions can be expected to ach
 <img style="height:30%" src="https://miro.medium.com/max/1200/1*5KizicdVpwvNCAo2Zy4hFQ.png">
 <img style="height:25%" src="https://www.kdnuggets.com/wp-content/uploads/blackbox.jpg">
 
-<p style="font-size: 9px"></p>
+<p style="font-size: 12px">Image from Wikipedia</p>
 
 -----
 <!-- .slide: data-background="white" -->
@@ -141,6 +141,8 @@ Powered by OpenAI GPT-3 and Codex
 <img style="width:40%" src="https://miro.medium.com/max/1435/1*wgDdR3Wrfca4EDxvtSbzJw.png">
 
 <img style="width:42%" src="https://miro.medium.com/max/1487/1*PbNoFOwNP2i6pS5zgrR16w.png">
+
+<p style="font-size: 12px">Illustrations by Halem Rostt (https://morioh.com/p/9bd69a11b02a)</p>
 
 -----
 ## Conclusions
