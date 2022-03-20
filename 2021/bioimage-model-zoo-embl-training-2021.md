@@ -76,7 +76,7 @@ await viewer.add_shapes([], {name:"annotation"})
 ### 🔥Demo: Visualization with Vizarr
 
 Made by Trevor Manz et. al.
-<iframe width="100%" height="500px" src="https://hms-dbmi.github.io/vizarr/?source=https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/4495402.zarr"  frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="500px" src="https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.1/4495402.zarr"  frameborder="0" allowfullscreen></iframe>
 
 
 -----
@@ -84,7 +84,7 @@ Made by Trevor Manz et. al.
 ## 🚀A rapid growing list of plugins
  * [ImageJ.JS](https://ij.imjoy.io) <button onclick="api.showDialog({src:'https://ij.imjoy.io'})">Run</button>
  * [File Manager](https://imjoy-team.github.io/elFinder/) <button onclick="api.showDialog({src:'https://imjoy-team.github.io/elFinder/'})">Run</button>
- * [Vizarr](https://github.com/hms-dbmi/vizarr) for visualizing zarr images <button onclick="api.showDialog({src:'https://hms-dbmi.github.io/vizarr/?source=https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/4495402.zarr', passive:true})">Run</button>
+ * [Vizarr](https://github.com/hms-dbmi/vizarr) for visualizing zarr images <button onclick="api.showDialog({src:'https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.1/4495402.zarr', passive:true})">Run</button>
  * [ITK/VTK Viewer](https://kitware.github.io/itk-vtk-viewer/docs/) for 3D visualizing <button onclick="api.getPlugin({src: ZarrPythonCode}).then(p=>{p.run({})})">Run</button>
  * [ImJoy Slides](https://slides.imjoy.io)
  * [ImJoy Chart Editor](https://chart.imjoy.io)
