@@ -24,11 +24,11 @@ Generalization & Interpretability
 ## Making AI human compatible
 
 <img style="width:40%" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Skynet_Terminator_logo.png"> 
-<img style="width:23%;" src="https://people.eecs.berkeley.edu/~russell/images/HumanCompatible-Cover-UK.jpg"><!-- .element: class="fragment" data-fragment-index="1" -->
+<img style="width:23%;" src="https://people.eecs.berkeley.edu/~russell/images/HumanCompatible-Cover-UK.jpg">
 
-_Machines are benificial to the extent that their actions can be expected to achive our objective._<!-- .element: class="fragment" data-fragment-index="2" -->
+_Machines are benificial to the extent that their actions can be expected to achive our objective._
 
--- Stuart Russell <!-- .element: class="fragment" data-fragment-index="2" -->
+-- Stuart Russell
 
 
 -----
