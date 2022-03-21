@@ -9,20 +9,9 @@ SciLifeLab | KTH Royal Institute of Technology
 
 -----
 <!-- .slide: data-background="white" -->
-## Making AI human compatible
+## Challenges in AI
 
-<img style="width:40%" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Skynet_Terminator_logo.png">
-<img style="width:30%;" src="https://people.eecs.berkeley.edu/~russell/images/HumanCompatible-Cover-UK.jpg">
-
-_Machines are benificial to the extent that their actions can be expected to achive our objective._
--- Stuart Russell
-
-
------
-<!-- .slide: data-background="white" -->
-## Long standing issues in AI
- * Generalization
- * Interpretability
+Generalization & Interpretability
 
 <br>
 <img style="height:30%" src="https://miro.medium.com/max/1200/1*5KizicdVpwvNCAo2Zy4hFQ.png">
@@ -32,12 +21,32 @@ _Machines are benificial to the extent that their actions can be expected to ach
 
 -----
 <!-- .slide: data-background="white" -->
+## Making AI human compatible
+
+<img style="width:40%" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Skynet_Terminator_logo.png"> 
+<img style="width:23%;" src="https://people.eecs.berkeley.edu/~russell/images/HumanCompatible-Cover-UK.jpg"><!-- .element: class="fragment" data-fragment-index="1" -->
+
+_Machines are benificial to the extent that their actions can be expected to achive our objective._<!-- .element: class="fragment" data-fragment-index="2" -->
+
+-- Stuart Russell <!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+-----
+<!-- .slide: data-background="white" -->
 ## Human-in-the-loop AI for life science
 
 <img src="https://cdn.clickworker.com/wp-content/uploads/2019/04/human-in-the-loop.jpg">
 
 Building machines by leveraging the power of the machine and human intelligence
-**Usability**, **Flexibility**, **Interactivity**, **Scalability**, **Privacy**
+
+-----
+## Tools for human-in-the-loop AI
+
+* **Usability**: User friendly GUI
+* **Flexibility**: Flexible for different data types
+* **Interactivity**: Respond to GUI on laptop/mobile
+* **Scalability**: Remote storage and compute resources
+* **Privacy**: Edge computing
 
 -----
 ## Building AI infrastructure for human-in-the-loop
