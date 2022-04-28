@@ -1,10 +1,10 @@
-I2K 2022
+From Images to Knowledge Conference - 2022
 
 ## Web- and AI-powered Bioimage Analysis with the BioEngine
 
 Wei OUYANG
 
-SciLifeLab | KTH Royal Institute of Technology
+SciLifeLab | KTH Royal Institute of Technology, Stockholm
 -----
 ## Overview
  * Introduction to the BioEngine
