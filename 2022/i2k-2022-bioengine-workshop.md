@@ -60,13 +60,7 @@ Data science tools in the browser
 * **Many applications**
 * **Shared GPU resources**
 * **Both inference and training**
-
------
-## BioEngine -- AI model and application serving
- * Fetch models from bioimage.io
- * Provide web API for model training and inference
- * Support test run models and ImJoy applications
- * Suitable for deploying AI workflows for institutions, facilities or labs
+* **Local or cloud deployment**
 
 -----
 # 🔥Hands on tutorial
@@ -76,24 +70,28 @@ Try the BioEngine
 <!-- .slide: data-state="tutorial-1" -->
 ## Tutorial 1: Getting Started
 <button class="button" onclick='loadNotebook("1-bioengine-tutorial-i2k2022.ipynb", "tutorial-1-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/1-bioengine-engine-tutorial.ipynb")'>Click to start the notebook</button>
+<button id="tutorial-1-reset" class="button" style="background-color:red;display:none;" onclick='loadNotebook("1-bioengine-tutorial-i2k2022.ipynb", "tutorial-1-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/1-bioengine-engine-tutorial.ipynb", true)'>Reset</button>
 <div id="tutorial-1-window" style="width: 100%; height: 100vh;"></div>
 
 -----
 <!-- .slide: data-state="tutorial-2" -->
 ## Tutorial 2: Getting Started
 <button class="button" onclick='loadNotebook("2-bioengine-tutorial-i2k2022.ipynb", "tutorial-2-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/2-bioengine-model-training.ipynb")'>Click to start the notebook</button>
+<button id="tutorial-2-reset" class="button" style="background-color:red;display:none;" onclick='loadNotebook("2-bioengine-tutorial-i2k2022.ipynb", "tutorial-2-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/2-bioengine-model-training.ipynb", true)'>Reset</button>
 <div id="tutorial-2-window" style="width: 100%; height: 100vh;"></div>
 
 -----
 <!-- .slide: data-state="tutorial-3" -->
 ## Tutorial 3: Create UI with ImJoy and Kaibu
 <button class="button" onclick='loadNotebook("3-bioengine-tutorial-i2k2022.ipynb", "tutorial-3-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/3-kaibu-geojson.ipynb")'>Click to start the notebook</button>
+<button id="tutorial-2-reset" class="button" style="background-color:red;display:none;" onclick='loadNotebook("3-bioengine-tutorial-i2k2022.ipynb", "tutorial-3-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/3-kaibu-geojson.ipynb", true)'>Reset</button>
 <div id="tutorial-3-window" style="width: 100%; height: 100vh;"></div>
 
 -----
 <!-- .slide: data-state="tutorial-4" -->
 ## Tutorial 4: Model training with the BioEngine
 <button class="button" onclick='loadNotebook("4-bioengine-tutorial-i2k2022.ipynb", "tutorial-4-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/4-kaibu-interactive-training.ipynb")'>Click to start the notebook</button>
+<button id="tutorial-4-reset" class="button" style="background-color:red;display:none;" onclick='loadNotebook("4-bioengine-tutorial-i2k2022.ipynb", "tutorial-3-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/4-kaibu-interactive-training.ipynb", true)'>Reset</button>
 <div id="tutorial-4-window" style="width: 100%; height: 100vh;"></div>
 
 -----
@@ -164,17 +162,25 @@ Follow us on twitter @bioimageio
 <!-- startup script  -->
 ```javascript execute
 
-async function loadNotebook(name, window_id, url){
+async function loadNotebook(name, window_id, url, overwrite){
     const jupyter = await api.createWindow({src: "https://jupyter.imjoy.io/lab/index.html", window_id})
+    const bid = window_id.replace("window", "reset")
+    const button = document.getElementById(bid)
     if(await jupyter.fileExists(name)){
+        if(overwrite){
+            const content = await (await fetch(url)).text()
+            await jupyter.removeFile(name)
+            await jupyter.loadFile(name, content, 'application/json')
+        }
         await jupyter.openFile(name)
-        // await jupyter.removeFile(name)
     } else{
         const content = await (await fetch(url)).text()
         const filePath = await jupyter.loadFile(name, content, 'application/json')
         await jupyter.openFile(filePath)
     }
+    button.style.display = "inline-block";
 }
+
 
 const PythonPluginCode = `
 <config lang="json">
