@@ -51,7 +51,13 @@ Data science tools in the browser
 -----
 <!-- .slide: data-background="white" -->
 ## Meet the BioEngine
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vQCVUJDbgT_cPVsm--P75h13xbl7kW1Kt4RESW2opDb8MYOQrYQxToaFMFYdUwEBDBC4EWKwto0EExB/pub?w=1550&amp;h=983">
+<img style="max-height: calc(100vh - 100px);" src="https://docs.google.com/drawings/d/e/2PACX-1vQCVUJDbgT_cPVsm--P75h13xbl7kW1Kt4RESW2opDb8MYOQrYQxToaFMFYdUwEBDBC4EWKwto0EExB/pub?w=1550&amp;h=983">
+
+-----
+<!-- .slide: data-background="white" -->
+## Deploying the BioEngine
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vSoG7ywI0qbNAbG-bV7J9LomhlK8r1xyhxS70LcA4_XNt_oUiWoYLcMFJlUFB2oA80hgL5TQzAWUhNW/pub?w=1510&amp;h=1050">
+
 
 -----
 ## BioEngine feature hightlights
@@ -106,16 +112,14 @@ Try the BioEngine
 -----
 ## Accessing the BioEngine from Icy
 <img src="https://raw.githubusercontent.com/oeway/slides/master/2022/icy-bioengine-cellpose-demo.gif">
+
 Collabration with Carlos García López de Haro and the Icy Team
 
 -----
 ## Accessing the BioEngine from Icy
 <img src="https://raw.githubusercontent.com/oeway/slides/master/2022/icy-bioengine-demo-nuclei-segmentation.gif">
+
 Collabration with Carlos García López de Haro and the Icy Team
------
-<!-- .slide: data-background="white" -->
-## Deploying the BioEngine
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vSoG7ywI0qbNAbG-bV7J9LomhlK8r1xyhxS70LcA4_XNt_oUiWoYLcMFJlUFB2oA80hgL5TQzAWUhNW/pub?w=1510&amp;h=1050">
 
 -----
 ## 🚀AI-assisted Bioimage Analysis
