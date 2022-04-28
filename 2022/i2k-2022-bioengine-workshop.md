@@ -106,6 +106,15 @@ Try the BioEngine
  * Instant usage without setup or installation
 
 -----
+## Accessing the BioEngine from Icy
+<img src="https://raw.githubusercontent.com/oeway/slides/master/2022/icy-bioengine-cellpose-demo.gif">
+Collabration with Carlos García López de Haro and the Icy Team
+
+-----
+## Accessing the BioEngine from Icy
+<img src="https://raw.githubusercontent.com/oeway/slides/master/2022/icy-bioengine-demo-nuclei-segmentation.gif">
+Collabration with Carlos García López de Haro and the Icy Team
+-----
 <!-- .slide: data-background="white" -->
 ## Deploying the BioEngine
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vSoG7ywI0qbNAbG-bV7J9LomhlK8r1xyhxS70LcA4_XNt_oUiWoYLcMFJlUFB2oA80hgL5TQzAWUhNW/pub?w=1510&amp;h=1050">
