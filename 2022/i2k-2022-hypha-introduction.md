@@ -46,7 +46,7 @@ SciLifeLab | KTH Royal Institute of Technology, Stockholm
 
 -----
 ## 🔥 A Quick Tour to Hypha App Engine
-<button class="button" onclick='loadNotebook("1-bioengine-tutorial-i2k2022.ipynb", "hypha-tour-window", "https://raw.githubusercontent.com/oeway/slides/master/2022/hypha-quick-tour.ipynb", true)'>A quick tour to Hypha</button>
+<button class="button" onclick='loadNotebook("hypha-quick-tour.ipynb", "hypha-tour-window", "https://raw.githubusercontent.com/oeway/slides/master/2022/hypha-quick-tour.ipynb", true)'>A quick tour to Hypha</button>
 <div id="hypha-tour-window" style="width: 100%; height: 100vh;"></div>
 
 -----
