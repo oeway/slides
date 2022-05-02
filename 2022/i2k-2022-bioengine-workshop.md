@@ -81,7 +81,7 @@ Try the BioEngine
 
 -----
 <!-- .slide: data-state="tutorial-2" -->
-## Tutorial 2: Getting Started
+## Tutorial 2: Training a CellPose segmentation model
 <button class="button" onclick='loadNotebook("2-bioengine-tutorial-i2k2022.ipynb", "tutorial-2-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/2-bioengine-model-training.ipynb")'>Click to start the notebook</button>
 <button id="tutorial-2-reset" class="button" style="background-color:red;display:none;" onclick='loadNotebook("2-bioengine-tutorial-i2k2022.ipynb", "tutorial-2-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/2-bioengine-model-training.ipynb", true)'>Reset</button>
 <div id="tutorial-2-window" style="width: 100%; height: 100vh;"></div>
