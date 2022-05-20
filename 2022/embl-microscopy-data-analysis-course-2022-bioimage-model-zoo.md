@@ -64,30 +64,6 @@ SciLifeLab | KTH Royal Institute of Technology, Stockholm
 * **Both inference and training**
 * **Local or cloud deployment**
 
------
-# 🔥Hands on tutorial
-Try the BioEngine
-
------
-<!-- .slide: data-state="tutorial-1" -->
-## Tutorial 1: Try the bioEngine
- * Go to https://bioimage.io
- * Search for 10.5281/zenodo.5869899
- * Click the BioEngine icon
- * Click input image to download an sample image
- * Click the select image button, drag and drop the image to elFinder
- * Select the uploaded image
- * Choose the pytorch weights and fill `yx` in the axes field
- * Click "Submit"
- * Wait for a while and see the result
- 
-
------
-<!-- .slide: data-state="tutorial-1" -->
-## Tutorial 2: Use the BioEngine via JupyterLite
-<button class="button" onclick='loadNotebook("1-bioengine-tutorial-i2k2022.ipynb", "tutorial-1-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/1-bioengine-engine-tutorial.ipynb")'>Click to start the notebook</button>
-<button id="tutorial-1-reset" class="button" style="background-color:red;display:none;" onclick='loadNotebook("1-bioengine-tutorial-i2k2022.ipynb", "tutorial-1-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/1-bioengine-engine-tutorial.ipynb", true)'>Reset</button>
-<div id="tutorial-1-window" style="width: 100%; height: 100vh;"></div>
 
 -----
 ## BioEngine vs Jupyter Notebooks / Colab
@@ -109,6 +85,32 @@ Collabration with Carlos García López de Haro and the Icy Team
 <img src="https://raw.githubusercontent.com/oeway/slides/master/2022/icy-bioengine-demo-nuclei-segmentation.gif">
 
 Collabration with Carlos García López de Haro and the Icy Team
+
+
+-----
+# 🔥Hands on tutorial
+Try the BioEngine
+
+-----
+<!-- .slide: data-state="tutorial-1" -->
+## Tutorial 1: Try the bioEngine
+ * Go to https://bioimage.io
+ * Search for 10.5281/zenodo.5869899
+ * Click the BioEngine icon
+ * Click input image to download an sample image
+ * Click the select image button, drag and drop the image to elFinder
+ * Select the uploaded image
+ * Choose the pytorch weights and fill `yx` in the axes field
+ * Click "Submit"
+ * Wait for a while and see the result
+ 
+
+-----
+<!-- .slide: data-state="tutorial-1" -->
+## Tutorial 2: Use the BioEnine via JupyterLite
+<button class="button" onclick='loadNotebook("1-bioengine-tutorial-i2k2022.ipynb", "tutorial-1-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/1-bioengine-engine-tutorial.ipynb")'>Click to start the notebook</button>
+<button id="tutorial-1-reset" class="button" style="background-color:red;display:none;" onclick='loadNotebook("1-bioengine-tutorial-i2k2022.ipynb", "tutorial-1-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/1-bioengine-engine-tutorial.ipynb", true)'>Reset</button>
+<div id="tutorial-1-window" style="width: 100%; height: 100vh;"></div>
 
 -----
 ## Conclusions
