@@ -84,7 +84,7 @@ Try the BioEngine
 
 -----
 <!-- .slide: data-state="tutorial-1" -->
-## Tutorial 2: Use the BioEnine via JupyterLite
+## Tutorial 2: Use the BioEngine via JupyterLite
 <button class="button" onclick='loadNotebook("1-bioengine-tutorial-i2k2022.ipynb", "tutorial-1-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/1-bioengine-engine-tutorial.ipynb")'>Click to start the notebook</button>
 <button id="tutorial-1-reset" class="button" style="background-color:red;display:none;" onclick='loadNotebook("1-bioengine-tutorial-i2k2022.ipynb", "tutorial-1-window", "https://raw.githubusercontent.com/imjoy-team/imjoy-tutorials/master/2-bioengine/1-bioengine-engine-tutorial.ipynb", true)'>Reset</button>
 <div id="tutorial-1-window" style="width: 100%; height: 100vh;"></div>
