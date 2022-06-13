@@ -1,5 +1,5 @@
 
-## Building infrastructure for web- and AI-powered data analysis
+## Building Infrastructure for Web- and AI-powered Data Analysis
 
 Wei OUYANG
 
@@ -177,16 +177,20 @@ Made by Trevor Manz et. al.
 <div id="hypha-tour-window" style="width: 100%; height: 100vh;"></div>
 
 -----
-<!-- .slide: data-background="white" -->
-## Building AI Platforms for the Masses
-<img style="width: 500px" src="https://imjoy.io/static/img/imjoy-logo-black.png">
+# <img alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo-white.svg">
+### Advanced AI models in one click!
 
-Data science tools in the browser
 -----
 <!-- .slide: data-background="white" -->
-<img style="width: 500px" alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo.svg">
+### 🤔How it works
 
-A repository for sharing AI Models in BioImage Analysis
+<img style="height:calc(100% - 200px);object-fit:contain;background-color: white;" src="https://docs.google.com/drawings/d/e/2PACX-1vSh8qO-jxZcGKjg5w52IMTesAUMbOaOxc3XQgmW7zBBj6btMGAUjcgh6iHgaTyzI18Ld7SSHkbie2k2/pub?w=1057&amp;h=689">
+
+-----
+## 🔥Try it yourself!
+ https://bioimage.io
+
+Preprint: https://www.biorxiv.org/content/10.1101/2022.06.07.495102v1
 
 -----
 <!-- .slide: data-background="white" -->
