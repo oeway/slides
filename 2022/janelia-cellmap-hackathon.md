@@ -13,7 +13,7 @@ SciLifeLab | KTH Royal Institute of Technology, Stockholm
  * AI-assisted BioImage Analysis
 
 -----
-# ImJoy and browser computing
+## ImJoy and Browser Computing
 
 -----
 ## Next-generation bioimage analysis tools
@@ -30,6 +30,7 @@ SciLifeLab | KTH Royal Institute of Technology, Stockholm
 * Rich and interactive UI libraries
 * Computation in the browser (+cloud)
 * Offline support
+* WebGPU & WebAssembly
 
 -----
 ## WebAssembly
@@ -279,7 +280,7 @@ const PythonPluginCode = `
 <config lang="json">
 {
   "name": "PythonPlugin",
-  "type": "native-python",
+  "type": "web-python",
   "version": "0.1.0",
   "description": "[TODO: describe this plugin with one sentence.]",
   "tags": [],
