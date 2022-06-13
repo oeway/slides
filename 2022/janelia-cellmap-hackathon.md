@@ -143,7 +143,7 @@ Made by Trevor Manz et. al.
 ## Hypha: Scalable Data Management and AI Model Serving
 
 -----
-## Desktop software DO NOT scale
+## Desktop software DOES NOT scale
 * Hardware: Lack of storage and computation resources
 * Software: UI + Computation coupling
 * New paltforms: Tablets & mobile phones
