@@ -177,19 +177,6 @@ Made by Trevor Manz et. al.
 <div id="hypha-tour-window" style="width: 100%; height: 100vh;"></div>
 
 -----
-<!-- .slide: data-background="white" -->
-## Building AI Platforms for the Masses
-<img style="width: 500px" src="https://imjoy.io/static/img/imjoy-logo-black.png">
-
-Data science tools in the browser
------
-<!-- .slide: data-background="white" -->
-<img style="width: 500px" alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo.svg">
-
-A repository for sharing AI Models in BioImage Analysis
-
-
------
 # <img alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo-white.svg">
 ### Advanced AI models in one click!
 
