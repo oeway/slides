@@ -1,58 +1,44 @@
-<!-- .slide: data-background="white" -->
-AI4Research open seminar 29/03/2022
 
-## Human-in-the-loop AI for data-driven life science
+## Building infrastructure for web- and AI-powered data analysis
 
 Wei OUYANG
 
-SciLifeLab | KTH Royal Institute of Technology
+SciLifeLab | KTH Royal Institute of Technology, Stockholm
 
 -----
-<!-- .slide: data-background="white" -->
-## Challenges in AI
-
-Generalization & Interpretability
-
-<br>
-<img style="height:30%" src="https://miro.medium.com/max/1200/1*5KizicdVpwvNCAo2Zy4hFQ.png">
-<img style="height:25%" src="https://www.kdnuggets.com/wp-content/uploads/blackbox.jpg">
-
-<p style="font-size: 12px">Image from Wikipedia</p>
+## Overview
+ * ImJoy and browser computing
+ * Hypha and BioEngine
+ * BioImage Model Zoo
+ * AI-assisted BioImage Analysis
 
 -----
-<!-- .slide: data-background="white" -->
-## Making AI human compatible
-
-<img style="width:40%" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Skynet_Terminator_logo.png"> 
-<img style="width:23%;" src="https://people.eecs.berkeley.edu/~russell/images/HumanCompatible-Cover-UK.jpg">
-
-_Machines are benificial to the extent that their actions can be expected to achive our objective._
-
--- Stuart Russell
-
+## ImJoy and Browser Computing
 
 -----
-<!-- .slide: data-background="white" -->
-## Human-in-the-loop AI for life science
+## Next-generation bioimage analysis tools
 
-<img src="https://cdn.clickworker.com/wp-content/uploads/2019/04/human-in-the-loop.jpg">
-
-Building machines by leveraging the power of the machine and human intelligence
-
------
-## Tools for human-in-the-loop AI
-
+* **Scalability**: Massive dataset and heavy computation
 * **Usability**: User friendly GUI
 * **Flexibility**: Flexible for different data types
 * **Interactivity**: Respond to GUI on laptop/mobile
-* **Scalability**: Remote storage and compute resources
-* **Privacy**: Edge computing
+* **Privacy**: Federated learning etc.
 
 -----
-## Building AI infrastructure for human-in-the-loop
- * ImJoy: Supercharging interactivity
- * BioImage Model Zoo: AI models in one-click 
- * OpenAI Codex: A sneak peak into the future
+## Browser-based computation
+
+* Rich and interactive UI libraries
+* Computation in the browser (+cloud)
+* Offline support
+* WebGPU & WebAssembly
+
+-----
+## WebAssembly
+
+**"a portable compilation target for programming languages"**
+
+ * [Windows XP in your browser](https://lrusso.github.io/VirtualXP/VirtualXP.htm)
+ * Pyodide: Python and Scientific stack in your browser ([JupyterLite](https://jupyter.imjoy.io/lab/index.html))
 
 -----
 <!-- .slide: data-background="white" -->
@@ -60,6 +46,61 @@ Building machines by leveraging the power of the machine and human intelligence
 Data science tools in the browser
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vSBsdhDBrp4L2zWfL_9YOUHCS2zQ51HtjplGa-l_a1hMpNjbqENzmXrcSmYs6yed_NACNZSRH-7qsph/pub?w=1248&amp;h=573">
+
+-----
+## Key concepts
+ * Sandboxed plugins connected via Remote Procedure calls
+ * Workflow composition via asynchronous programming
+ * Open Integration with existing software/website
+
+-----
+## Remote Procedure calls in ImJoy
+
+* Bi-directional & Symertrical
+* Sending objects with functions
+* Implemented in Javascript and Python
+(Java is coming)
+
+```python
+# Passing lazy object (e.g. zarr array)
+source = zarr.open("my-data.zarr")
+result = await plugin_a.process(source)
+await plugin_b.display(result)
+```
+
+Github: https://github.com/imjoy-team/imjoy-rpc
+
+-----
+<!-- .slide: data-state="demo1" -->
+### Calling Python from JS with RPC
+<div>
+Python (cloud)  ⇔  Javascript (local)
+</div>
+<div>
+<div id="window-1" style="display: inline-block;width: 46%; height: calc(100vh - 200px);"></div>
+
+<div id="window-2" style="display: inline-block;width: 46%; height: calc(100vh - 200px);"></div>
+</div>
+
+-----
+### Asynchronous Workflow Composition
+
+Concurrent Execution
+```python
+promise1 = plugin1.process(input1)
+promise2 = plugin2.process(input2)
+output1, output2 = await asyncio.gather(promise1, promise2)
+
+output3 = await plugin3(output1, output2)
+```
+
+Sequential Execution
+```python
+output1 = await plugin1.process(input1)
+output2 = await plugin2.process(input2)
+
+output3 = await plugin3(output1, output2)
+```
 
 -----
 
@@ -79,6 +120,12 @@ await viewer.add_shapes([], {name:"annotation"})
 <button class="button" onclick="runDemo2()">Run</button>
 
 -----
+<!-- .slide: data-state="ij-macro-1" -->
+## 🔥Demo: ImJoy + ImageJ => ImageJ.JS
+
+<div id="macro-editor-1"></div>
+
+-----
 
 ### 🔥Demo: Visualization with Vizarr
 
@@ -86,21 +133,61 @@ Made by Trevor Manz et. al.
 <iframe width="100%" height="500px" src="https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.1/4495402.zarr"  frameborder="0" allowfullscreen></iframe>
 
 -----
-<!-- .slide: data-state="ij-macro-1" -->
-### 🔥Demo: ImageJ.JS macro editor
 
-<div id="macro-editor-1"></div>
+### 🔥Demo: JupyterLite + Zarr (ZipStore) + Vizarr
+
+<button class="button" onclick='loadNotebook("zarr-zipstore-vizarr.ipynb", "vizarr-zipstore-window", "https://gist.githubusercontent.com/oeway/391b4352ea57b5682366ce3dc2fa9174/raw/zarr-virtual-store-jupyterlite-imjoy.ipynb", true)'>Start Demo</button>
+<div id="vizarr-zipstore-window" style="width: 100%; height: 100vh;"></div>
+
+-----
+## Hypha: Scalable Data Management and AI Model Serving
+
+-----
+## Desktop software DOES NOT scale
+* Hardware: Lack of storage and computation resources
+* Software: UI + Computation coupling
+* New paltforms: Tablets & mobile phones
 
 -----
 <!-- .slide: data-background="white" -->
-### 🔥Human-in-the-loop: Interactive Annotation
+## We need a cloud native solution
+ * Handle data and computation in the cloud
+ * Desktop software and browser as a client
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vSnrIWRqUPX5wotapCcUOIATiXXlJ12MtEfzAXAJePLUDbJy5KcfIKLaY3s5nYQZ1-TE9zhzewR8i_2/pub?w=1190&amp;h=916">
+<img src="https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/media/cloud-native-foundational-pillars.png">
 
 -----
-### 🔥Human-in-the-loop: Interactive Annotation with ImJoy and Colab
+<!-- .slide: data-background="white" -->
+## Introducing Hypha
+<img style="max-height: calc(100vh - 200px);"  src="https://docs.google.com/drawings/d/e/2PACX-1vTdYT__2bIZISzNpRuEmV2XjmLNYKmiv5L8-KzYNN6bSNpf32PgEV5OujrtaOPKwApRpWL1GlAH4z-I/pub?w=845&amp;h=528">
 
-<iframe width="100%" height="500px" src="https://www.youtube.com/embed/VIZDkhCZtJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-----
+<!-- .slide: data-background="white" -->
+## Hypha App Engine
+<img  style="max-height: calc(100vh - 200px);" src="https://docs.google.com/drawings/d/e/2PACX-1vRgAdZiOm_BNCxkeAOh8GzYx3qyYPznvmw7GBhmBWYJQE5mxAH6I_rtNEMC5DcIPrg1lIA21SyoJsqp/pub?w=1440&amp;h=1080">
+
+-----
+<!-- .slide: data-background="white" -->
+<img style="max-height: calc(100vh - 100px);"  src="https://docs.google.com/drawings/d/e/2PACX-1vR5TfCEbqfUtHPUgnEHwqdRPnXVTKHwFE6W2v7_1M9cjLrhgmrswXNycyM07r0QNkQOrghML_VDGqZB/pub?w=1559&amp;h=1211">
+<!-- <img style="max-height: calc(100vh - 200px);"  src="https://docs.google.com/drawings/d/e/2PACX-1vQ05EKTXCsRcnqpQIu2R8sOEiVi7ahWjO-Eo9Y8H6BonmKlBO3i1Xi3ndfr9r0vBKoPVi6NztNeyLFh/pub?w=1559&amp;h=1211"> -->
+
+-----
+## 🔥 A Quick Tour to Hypha App Engine
+<button class="button" onclick='loadNotebook("hypha-quick-tour.ipynb", "hypha-tour-window", "https://raw.githubusercontent.com/oeway/slides/master/2022/hypha-quick-tour.ipynb", true)'>A quick tour to Hypha</button>
+<div id="hypha-tour-window" style="width: 100%; height: 100vh;"></div>
+
+-----
+<!-- .slide: data-background="white" -->
+## Building AI Platforms for the Masses
+<img style="width: 500px" src="https://imjoy.io/static/img/imjoy-logo-black.png">
+
+Data science tools in the browser
+-----
+<!-- .slide: data-background="white" -->
+<img style="width: 500px" alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo.svg">
+
+A repository for sharing AI Models in BioImage Analysis
+
 
 -----
 # <img alt="BioImage Model Zoo" src="https://bioimage.io/static/img/bioimage-io-logo-white.svg">
@@ -116,93 +203,40 @@ Made by Trevor Manz et. al.
 ## 🔥Try it yourself!
  https://bioimage.io
 
------
-## BioEngine -- AI model and application serving
- * Provide web API for model training and inference
- * Support test run models and ImJoy applications
- * Suitable for deploying AI workflows for institutions, facilities or labs
+Preprint: https://www.biorxiv.org/content/10.1101/2022.06.07.495102v1
 
 -----
-Running models in JupyterLite via the BioEngine
-<iframe style="width:100%;height:calc(100vh - 20px)" src="https://jupyter.imjoy.io/retro/notebooks/?path=bioengine-demo.ipynb"></iframe>
+<!-- .slide: data-background="white" -->
+## BioEngine: Hypha-powered AI infrastructure for BioImaging
+<img style="max-height: calc(100vh - 200px);" src="https://docs.google.com/drawings/d/e/2PACX-1vQCVUJDbgT_cPVsm--P75h13xbl7kW1Kt4RESW2opDb8MYOQrYQxToaFMFYdUwEBDBC4EWKwto0EExB/pub?w=1550&amp;h=983">
+
+-----
+<!-- .slide: data-background="white" -->
+## Deploying the BioEngine
+<img style="max-height: calc(100vh - 200px);" src="https://docs.google.com/drawings/d/e/2PACX-1vSoG7ywI0qbNAbG-bV7J9LomhlK8r1xyhxS70LcA4_XNt_oUiWoYLcMFJlUFB2oA80hgL5TQzAWUhNW/pub?w=1510&amp;h=1050">
+
+-----
+## Hands on workshop for BioEngine at I2K
+
+Available here: https://youtu.be/EEo_GPjbxn4
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EEo_GPjbxn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -----
 ## 🚀AI-assisted Bioimage Analysis
-### A taste of the future!
+Available here: https://youtu.be/pkOp_oUybsc
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pkOp_oUybsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
------
-<!-- .slide: data-background="white" -->
-## The trending NLP models
-The exploding Natural Language Processing (NLP) model size
-![](https://miro.medium.com/max/582/1*C-KNWQC_wXh-Q2wc6VPK1g.png)
-
------
-## GPT-3 -- the most powerful AI in the world
-
-* Made by OpenAI, released in June 2020
-* 175 billion parameters
-* Trained on 45TB of text data
-* Take 355 years to train GPT-3 on a Tesla V100
-* Costs $12 million to train once
-
-(Brown et. al, 2020)
------
-<iframe style="width:100%;height:100vh" src="https://jalammar.github.io/how-gpt3-works-visualizations-animations/"></iframe>
-
------
-## Codex model for code generation
- * OpenAI Codex is a descendant of GPT-3
- * Trained on billions of lines of source code
- * Made for code generation in **Python**, Go, JavaScript, Perl, PHP, Ruby, Shell, Swift, and TypeScript etc.
-
-(Chen et. al 2021)
------
-## Key Concepts: Autocompletion & few-shot learning
-<!-- .slide: data-background="white" -->
-<img src="https://raw.githubusercontent.com/oeway/slides/master/2021/robot-autocompletion-example.png">
-<img src="https://miro.medium.com/max/1000/1*q-P5aQ7A6VlsfroP3ckg8A.jpeg">
-
------
-# 🔥Codex live demos!
-## Disclaimer!
- * All the demo applications have not yet been approved for launch
- * Please don't record the demos
-
------
-<iframe style="width:100%;height:calc(100vh - 20px)" src="https://www.youtube.com/embed/pkOp_oUybsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
------
-## Using existing knowledge and tools in AI
-
-Codex provides a way for making hybrid solutions:
- * Analytical solutions backed by math
- * Deep neural networks
-
------
-## Advantages of code generation
- * Improve interpretability: Source code can be inspected
- * Improve generalization and enable extrapolation
-
-<!-- .slide: data-background="white" -->
-
-<img style="width:40%" src="https://miro.medium.com/max/1435/1*wgDdR3Wrfca4EDxvtSbzJw.png">
-
-<img style="width:42%" src="https://miro.medium.com/max/1487/1*PbNoFOwNP2i6pS5zgrR16w.png">
-
-<p style="font-size: 12px">Illustrations by Halem Rostt (https://morioh.com/p/9bd69a11b02a)</p>
-
-
------
-## Other advantages of Codex
- * Zero/Few-shot learning for low data domain
- * Building trust between human & AI
+Powered by OpenAI GPT-3 and Codex
 
 -----
 ## Conclusions
- * Safeguarding AI via human-in-the-loop
- * ImJoy for scalability and interactivity
- * BioImage Model Zoo for sharing AI models
- * BioEninge for AI model serving in the cloud
- * AI-assisted bioimage anlysis via Code generation
+
+A future of web- and AI-powered data analysis
+
+ * ImJoy and web-based data analysis
+ * Hypha: Scalable Data Management and AI Model Serving
+ * BioImage Model Zoo and the BioEngine
+ * Codex for creating new Hypha Apps
 
 -----
 ### Acknowledgements (1)
@@ -231,14 +265,6 @@ BioImage.IO is powered by the 🧠 and ❤️ of:
 Follow us on twitter @bioimageio
 
 -----
-### Acknowledgements (3)
-
-We thank OpenAI for providing beta testing access to GPT-3 and Codex
-
-The demos during this talk has not been approved by OpenAI
-
-
------
 
 # 🙏Thank You!
 
@@ -247,11 +273,31 @@ The demos during this talk has not been approved by OpenAI
 <!-- startup script  -->
 ```javascript execute
 
+async function loadNotebook(name, window_id, url, overwrite){
+    const jupyter = await api.createWindow({src: "https://jupyter.imjoy.io/lab/index.html", window_id})
+    const bid = window_id.replace("window", "reset")
+    const button = document.getElementById(bid)
+    if(await jupyter.fileExists(name)){
+        if(overwrite){
+            const content = await (await fetch(url)).text()
+            await jupyter.removeFile(name)
+            await jupyter.loadFile(name, content, 'application/json')
+        }
+        await jupyter.openFile(name)
+    } else{
+        const content = await (await fetch(url)).text()
+        const filePath = await jupyter.loadFile(name, content, 'application/json')
+        await jupyter.openFile(filePath)
+    }
+    button.style.display = "inline-block";
+}
+
+
 const PythonPluginCode = `
 <config lang="json">
 {
   "name": "PythonPlugin",
-  "type": "native-python",
+  "type": "web-python",
   "version": "0.1.0",
   "description": "[TODO: describe this plugin with one sentence.]",
   "tags": [],
