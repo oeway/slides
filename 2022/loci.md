@@ -1,3 +1,4 @@
+LOCI@Madison - Dec. 05, 2022
 
 ## Building infrastructure for web- and AI-powered data analysis
 
@@ -51,6 +52,7 @@ Data science tools in the browser
 ## Key concepts
  * Sandboxed plugins connected via Remote Procedure calls
  * Workflow composition via asynchronous programming
+ * Lazy object sharing (zarr etc.)
  * Open Integration with existing software/website
 
 -----
